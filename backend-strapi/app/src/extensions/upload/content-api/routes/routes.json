@@ -1,0 +1,26 @@
+[
+  {
+    "method": "POST",
+    "path": "/upload",
+    "handler": "upload.upload",
+    "config": {
+      "policies": []
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/upload/files",
+    "handler": "upload.find",
+    "config": {
+      "policies": []
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/upload/files/:id",
+    "handler": "upload.findOne",
+    "config": {
+      "policies": []
+    }
+  }
+]

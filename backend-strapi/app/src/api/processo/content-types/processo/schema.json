@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "processos",
+  "info": {
+    "singularName": "processo",
+    "pluralName": "processos",
+    "displayName": "processos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "documentId": {
+      "type": "string"
+    },
+    "emailCliente": {
+      "type": "email"
+    },
+    "nomeEmpreendimento": {
+      "type": "string"
+    },
+    "enderecoObjeto": {
+      "type": "text"
+    },
+    "tipologia": {
+      "type": "string"
+    },
+    "material": {
+      "type": "string"
+    },
+    "situacaoObra": {
+      "type": "enumeration",
+      "enum": [
+        "Não Iniciada",
+        "Em Andamento",
+        "Concluída"
+      ]
+    },
+    "dataInicioObra": {
+      "type": "date"
+    },
+    "dataFimObra": {
+      "type": "date"
+    },
+    "equipamentosTemporarios": {
+      "type": "boolean"
+    },
+    "detalhesEquipamento": {
+      "type": "text"
+    },
+    "nomeProprietario": {
+      "type": "string"
+    },
+    "cpfCnpj": {
+      "type": "string"
+    },
+    "enderecoProprietario": {
+      "type": "text"
+    },
+    "telefoneProprietario": {
+      "type": "string"
+    },
+    "emailProprietario": {
+      "type": "email"
+    },
+    "contratoSocial": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "termoOutorga": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "statusProcesso": {
+      "type": "enumeration",
+      "enum": [
+        "Cadastro Recebido",
+        "Em Análise",
+        "Aguardando Cliente",
+        "Aprovado",
+        "Rejeitado"
+      ]
+    }
+  }
+}
